@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*Configurações de padronização da Base do CSS - Funções e Diretivas*/
+@layer base{
+  body{
+    @apply bg-[#ecf0f3];
+    @apply text-[#1f2937];
+    @apply tracking-wide;
+  }
+  h1,h2,h3,h4{
+    @apply font-bold
+  }
+  h1{
+    @apply text-4xl; 
+    @apply sm:text-5xl;
+    @apply md:text-6xl;
+  }
+  h2{
+    @apply text-3xl;
+    @apply sm:text-4xl;
+  }
+  li{
+    @apply cursor-pointer;
+  }
+  button{
+    @apply shadow-xl;
+    @apply shadow-gray-400;
+    @apply rounded-xl;
+    @apply uppercase;
+    @apply bg-gradient-to-r;
+    @apply from-[#5651e5];
+    @apply to-[#709dff];
+    @apply text-white
+  }
+}
